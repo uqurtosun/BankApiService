@@ -252,6 +252,7 @@
             </button>
             <div class="dropdown-menu tx-13">
               <a class="dropdown-item" href="{{route('client',$data[$i]['transaction']['merchant']['transactionId'])}}">Go Profil</a>
+              <a class="dropdown-item" href="{{route('justTransaction',$data[$i]['transaction']['merchant']['transactionId'])}}">Go Transaction</a>
               <a class="dropdown-item disabled" href="#">{{ $data[$i]['transaction']['merchant']['transactionId'] }}</a>
             </div>
           </div>    
@@ -276,6 +277,7 @@
             </button>
             <div class="dropdown-menu tx-13">
               <a class="dropdown-item" href="{{route('client',$data[$i]['transaction']['merchant']['transactionId'])}}">Go Profil</a>
+              <a class="dropdown-item" href="{{route('justTransaction',$data[$i]['transaction']['merchant']['transactionId'])}}">Go Transaction</a>
               <a class="dropdown-item disabled" href="#">{{ $data[$i]['transaction']['merchant']['transactionId'] }}</a>
             </div>
           </div>

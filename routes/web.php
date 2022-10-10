@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginAuth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\JustTransactionController;
 
 
 // Sisteme Girişi ve Çıkış Yolları
@@ -19,5 +20,6 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'Admin'], function(){
        Route::get('/',[TransactionController::class,'index'])->name('admin')->middleware(['LoginAuthControl']);
        Route::match(['post','get'],'/TransactionForm', [TransactionController::class,'transactionForm'])->name('transactionForm')->middleware(['LoginAuthControl']);
        Route::match(['post','get'],'/Client/{id?}',[ClientController::class, 'index'] )->name('client')->middleware(['LoginAuthControl']);
+       Route::match(['post','get'],'/Transaction/{id?}',[JustTransactionController::class, 'index'] )->name('justTransaction')->middleware(['LoginAuthControl']);
 });
 
