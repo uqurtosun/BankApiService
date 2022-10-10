@@ -45,7 +45,7 @@
             $(".sendData").click(function(){
                 $.ajax({
                     headers:{'X-CSRF-TOKEN' : '{{ csrf_token() }}'},
-                    url: "http://bank-api-service.herokuapp.com/LoginCheck",
+                    url: "https://bank-api-service.herokuapp.com/LoginCheck",
                     method: 'POST',
                     data: { email:$(".email").val(), password:$(".password").val()},
                     
