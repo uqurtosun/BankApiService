@@ -33,12 +33,12 @@
     <title>BANK API DEMO</title>
    
     <!-- vendor css -->
-    <link href="{{asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
-    <script src="{{asset('assets/lib/jquery/jquery.min.js')}}"></script>
+    <link href="{{secure_asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
+    <script src="{{secure_asset('assets/lib/jquery/jquery.min.js')}}"></script>
     <!-- azia CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/azia.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/azia.css')}}">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <script>
         $(document).ready(function(){
@@ -104,13 +104,13 @@
 
 
 
-    <script src="{{asset('assets/lib/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/lib/ionicons/ionicons.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/jquery/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/ionicons/ionicons.js')}}"></script>
 
 
 
-    <script src="{{asset('assets/js/azia.js')}}"></script>
+    <script src="{{secure_asset('assets/js/azia.js')}}"></script>
     <script>
       $(function(){
         'use strict'

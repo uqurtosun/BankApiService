@@ -41,19 +41,19 @@
     <title>BANK API TRANSACTION</title>
 
     <!-- vendor css -->
-    <link href="{{asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/spectrum-colorpicker/spectrum.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/select2/css/select2.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/pickerjs/picker.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/spectrum-colorpicker/spectrum.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/select2/css/select2.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/pickerjs/picker.min.css')}}" rel="stylesheet">
 
     <!-- azia CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/azia.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('assets/css/azia.css')}}">
 
   </head>
   <body>
@@ -66,7 +66,7 @@
         </div><!-- az-header-left -->
         <div class="az-header-menu">
           <div class="az-header-menu-header">
-            <a href="index.html" class="az-logo"><span></span> azia</a>
+            <a href="{{ URL::route('admin')}}" class="az-logo"><span></span> Dashboard</a>
             <a href="" class="close">&times;</a>
           </div><!-- az-header-menu-header -->
 
@@ -75,14 +75,14 @@
          
         
           <div class="dropdown az-profile-menu">
-            <a href="" class="az-img-user"><img src="{{asset('assets/img/faces/face1.jpg')}}" alt=""></a>
+            <a href="" class="az-img-user"><img src="{{secure_asset('assets/img/faces/face1.jpg')}}" alt=""></a>
             <div class="dropdown-menu">
               <div class="az-dropdown-header d-sm-none">
                 <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
               </div>
               <div class="az-header-profile">
                 <div class="az-img-user">
-                  <img src="{{asset('assets/img/faces/face1.jpg')}}" alt="">
+                  <img src="{{secure_asset('assets/img/faces/face1.jpg')}}" alt="">
                 </div><!-- az-img-user -->
                 <h6>John wick</h6>
                 <span>Premium Member</span>
@@ -232,20 +232,20 @@
     </div><!-- az-content -->
 
 
-    <script src="{{asset('assets/lib/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/lib/jquery-ui/ui/widgets/datepicker.js')}}"></script>
-    <script src="{{asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/lib/ionicons/ionicons.js')}}"></script>
-    <script src="{{asset('assets/lib/jquery.maskedinput/jquery.maskedinput.js')}}"></script>
-    <script src="{{asset('assets/lib/spectrum-colorpicker/spectrum.js')}}"></script>
-    <script src="{{asset('assets/lib/select2/js/select2.min.js')}}"></script>
-    <script src="{{asset('assets/lib/ion-rangeslider/js/ion.rangeSlider.min.js')}}"></script>
-    <script src="{{asset('assets/lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js')}}"></script>
-    <script src="{{asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js')}}"></script>
-    <script src="{{asset('assets/lib/pickerjs/picker.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/jquery/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/ionicons/ionicons.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/jquery.maskedinput/jquery.maskedinput.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/spectrum-colorpicker/spectrum.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/select2/js/select2.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/ion-rangeslider/js/ion.rangeSlider.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js')}}"></script>
+    <script src="{{secure_asset('assets/lib/pickerjs/picker.min.js')}}"></script>
   
 
-    <script src="{{asset('assets/js/azia.js')}}"></script>
+    <script src="{{secure_asset('assets/js/azia.js')}}"></script>
     <script>
       // Additional code for adding placeholder in search box of select2
       (function($) {
