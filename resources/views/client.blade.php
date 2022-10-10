@@ -139,7 +139,7 @@
                       <h6>Shipping Address</h6>
                       <span>City : @if($billingState==false) Null @else {{$billingState}}  @endif   </span>
                       <p>
-
+             <!-- TRANSACTION  Json Yapısı Sabit Olmadıgı için Hatalar Oluşuyordur Bunu Düzeltmek İçin IF Kullanıldı   -->
                       @if($countRow < 16 )  
 
                       @else

@@ -14,23 +14,20 @@ class TransactionController extends Controller
 
 
       function transactionForm(Request $request){
+      
         
+        // Transaction Başlangıç ve Bitiş Tarihi Gelip Gelmediği Konteol Ediliyor
       $request->validate([
           'startDate'=>'required',
           'endDate'=>'required',
       ]);
         $request->flash();
         
-        $responseLogin = Http::asForm()->post('https://sandbox-reporting.rpdpymnt.com/api/v3/merchant/user/login', [
-            'email' => 'demo@financialhouse.io',
-            'password' => 'cjaiU8CV',
-        ]);
-        $myData        = $responseLogin ->json();
-        $authorization = session() -> put('authorization', $myData['token']);
 
-             
-         if($request->page == 'NEXT') {$curPage=1+$request->curPage;} elseif($request->page == 'PREV' && $request->curPage > 1) {$curPage=$request->curPage-1;} else {$curPage=1;}
+         // Transaction Sayfalama için Kontrol Yapılıyor
+        if($request->page == 'NEXT') {$curPage=1+$request->curPage;} elseif($request->page == 'PREV' && $request->curPage > 1) {$curPage=$request->curPage-1;} else {$curPage=1;}
 
+         // Transaction Verileri Çekiliyor
         $responseTransactionList = Http::withHeaders(['Authorization' => session('authorization')])
        ->post('https://sandbox-reporting.rpdpymnt.com/api/v3/transaction/list', 
              [
@@ -41,12 +38,13 @@ class TransactionController extends Controller
                'status'=>$request->STATUS,
                
              ]);
-
+         
+         // Transaction JSON çevirliyor
          $oneList= $responseTransactionList->json();
     
 
         
-
+      // Transactions ve Sayfalama Bilgililer View Gönderiliyor
         return view('home',$oneList,['status'=>$request->STATUS,'omo'=>$request->page,'curPage'=>$curPage]);
    
       }

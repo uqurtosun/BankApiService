@@ -185,7 +185,7 @@
             
 
  
-
+    <!-- TRANSACTION  50 Veriden Fazla ise Sayfalama Çalışır IF döner   -->
           @if(count($data) >= 50)
 
           <div class="row row-sm">
@@ -198,6 +198,9 @@
             </div>
         </div>
         <hr class="mg-y-05">
+
+        <!-- TRANSACTION  50 Veriden AZ ise Sayfalama Çalışır IF döner   -->
+
         @elseif($curPage > 1 && count($data) <= 50 )
 
         <div class="row row-sm">
@@ -227,7 +230,7 @@
               </thead>
               <tbody>
     
-            
+            <!-- TRANSACTION  Json Yapısı Sabit Olmadıgı için Hatalar Oluşuyordur Bunu Düzeltmek İçin IF Kullanıldı   -->
               @for($i=1; $i < count($data); $i++)
    
    <tr>

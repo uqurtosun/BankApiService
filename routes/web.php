@@ -8,11 +8,12 @@ use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\ClientController;
 
 
-
+// Sisteme Girişi ve Çıkış Yolları
 Route::get('/', function(){ return view('login');})->name('login')->middleware(['LoginControl']);
 Route::post('/LoginCheck', [LoginAuth::class, 'index'])->name('LoginCheck');
 Route::get('/Logauth', [LoginAuth::class, 'Logauth'])->name('Logauth');
 
+// Admin Bölümünü Ayrı Gruplandırdık. Login Olduktan Sonraki Tüm Yönlendirmeler Burada.
 
 Route::group(['namespace'=>'Admin', 'prefix'=>'Admin'], function(){
        Route::get('/',[TransactionController::class,'index'])->name('admin')->middleware(['LoginAuthControl']);

@@ -185,12 +185,12 @@
           
             
            <div class="col-sm-6 col-md-3"><button class="btn btn-az-primary btn-block">Search</button></div>
-          </div><!-- row  {{ session('authorization') }} -->
+          </div><!-- row   -->
           </form>
           <hr class="mg-y-30">
             
          
-
+        <!-- TRANSACTION  Tarihleri Boşmu Diye Kontrol Ediliyor   -->
         @if($errors->any())
          
         @foreach($errors->all() as $err)
