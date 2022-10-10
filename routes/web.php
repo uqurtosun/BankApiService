@@ -9,7 +9,7 @@ use App\Http\Controllers\ClientController;
 
 
 // Sisteme Girişi ve Çıkış Yolları
-Route::get('/', function(){ return view('login');})->name('login')->middleware(['LoginControl']);
+Route::get('/', function(){ return view('login');}, 'https')->name('login')->middleware(['LoginControl']);
 Route::post('/LoginCheck', [LoginAuth::class, 'index'])->name('LoginCheck');
 Route::get('/Logauth', [LoginAuth::class, 'Logauth'])->name('Logauth');
 
