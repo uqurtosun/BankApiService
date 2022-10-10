@@ -81,11 +81,11 @@
         
             <div class="form-group">
               <label>Email</label>
-              <input type="text" class="form-control email" name="email" placeholder="Enter your email" value="demo@financialhouse.io">
+              <input type="text" class="form-control email" name="email" placeholder="Enter your email" value="">
             </div><!-- form-group -->
             <div class="form-group">
               <label>Password</label>
-              <input type="password" class="form-control password" name="password" placeholder="Enter your password" value="cjaiU8CV">
+              <input type="password" class="form-control password" name="password" placeholder="Enter your password" value="">
             </div><!-- form-group -->
             <button class="btn btn-az-primary btn-block sendData">Login</button>
         

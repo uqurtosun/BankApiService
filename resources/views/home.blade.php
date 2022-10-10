@@ -338,7 +338,7 @@
           <div class="az-footer mg-t-auto">
             <div class="container">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Demo <a href="#" target="_blank">Uğur Tosun</a> uqurtosun@gmail.com</span>            </div><!-- container -->
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Demo <a href="#" target="_blank"></span>            </div><!-- container -->
           </div><!-- az-footer -->
         </div><!-- az-content-body -->
       </div><!-- container -->
