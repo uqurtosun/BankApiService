@@ -33,16 +33,16 @@
     <title>BANK API TRANSACTION</title>
 
     <!-- vendor css -->
-    <link href="{{asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/spectrum-colorpicker/spectrum.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/select2/css/select2.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/lib/pickerjs/picker.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/typicons.font/typicons.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/spectrum-colorpicker/spectrum.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/select2/css/select2.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/lib/pickerjs/picker.min.css')}}" rel="stylesheet">
 
     <!-- azia CSS -->
     <link rel="stylesheet" href="{{secure_asset('assets/css/azia.css')}}">
