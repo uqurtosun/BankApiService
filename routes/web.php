@@ -1,0 +1,22 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\LoginAuth;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\ClientController;
+
+
+
+Route::get('/', function(){ return view('login');})->name('login')->middleware(['LoginControl']);
+Route::post('/LoginCheck', [LoginAuth::class, 'index'])->name('LoginCheck');
+Route::get('/Logauth', [LoginAuth::class, 'Logauth'])->name('Logauth');
+
+
+Route::group(['namespace'=>'Admin', 'prefix'=>'Admin'], function(){
+       Route::get('/',[TransactionController::class,'index'])->name('admin')->middleware(['LoginAuthControl']);
+       Route::match(['post','get'],'/TransactionForm', [TransactionController::class,'transactionForm'])->name('transactionForm')->middleware(['LoginAuthControl']);
+       Route::match(['post','get'],'/Client/{id?}',[ClientController::class, 'index'] )->name('client')->middleware(['LoginAuthControl']);
+});
+
