@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Http;
 class ClientController extends Controller
 {
     function index ($id){
+
+        if($id==null) {return redirect('Admin');}
           
         $responseClient = Http::withHeaders(['Authorization' => session('authorization')])
         ->post('https://sandbox-reporting.rpdpymnt.com/api/v3/client', 

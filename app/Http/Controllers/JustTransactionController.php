@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Http;
 class JustTransactionController extends Controller
 {
     function index ($id){
+
+        if($id==null) {return redirect('Admin');}
           
         $responseTransaction = Http::withHeaders(['Authorization' => session('authorization')])
         ->post('https://sandbox-reporting.rpdpymnt.com/api/v3/transaction', 
