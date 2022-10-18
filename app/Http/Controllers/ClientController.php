@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 
 class ClientController extends Controller
 {
-    function index ($id){
+    function index ($id=null){
 
         if($id==null) {return redirect('Admin');}
           

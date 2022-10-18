@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class JustTransactionController extends Controller
 {
-    function index ($id){
+    function index ($id=null){
 
         if($id==null) {return redirect('Admin');}
           
